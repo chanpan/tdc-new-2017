@@ -1,0 +1,11 @@
+Login สำเร็จ
+==============================================================================
+buffe_config 
+	-name , value
+config_sql -> file to table
+buffe_constanct 
+	-name , value
+user_login -> file to table
+
+==============================================================================
+
