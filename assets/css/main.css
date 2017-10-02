@@ -1,0 +1,69 @@
+body{
+    background: #f3f3f3;
+    /* font-family: 'TH Baijam'; */
+} 
+.panel-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    overflow: hidden;
+    xtouch-action: none;
+    min-height: 800px;
+    background: #ffffff;
+}
+
+.panel-left {
+    padding: 0px;
+    width: 200px;
+    min-width: 0px;
+    overflow: hidden;
+}
+
+.splitter {
+    flex: 0 0 auto;
+    width: 5px;
+    min-height: 200px;
+    cursor: e-resize;
+    background: #fff;
+    border-left: 1px solid #e7e7e7;
+}
+
+.panel-right {
+    flex: 1 1 auto;
+    background: white;
+    padding: 10px;
+    width: 100%;
+    min-width: 600px;
+}
+
+
+/*menu slide*/
+.main{
+    position: absolute;
+    width: 100%; 
+    margin-left: 40px;
+    float: right;
+  }
+  nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+    padding: 0 0px 0 0px;
+  }
+  .navbar-nav{
+      width: 100%;    background: #ffffff;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    color: #777;
+  }
+
+  nav.sidebar li {
+    width: 100%;
+  }
+  .navbar-default {
+    background-color: #f8f8f8;
+    border-color: #ffffff;
+}
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 100%;
+}

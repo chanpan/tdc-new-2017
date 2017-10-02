@@ -1,0 +1,31 @@
+{
+  "name": "tdc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "rebuild-all":"electron-rebuild",
+    "rebuild-sqlite3": "electron-rebuild -f -w ./node_modules/sqlite3",
+    "build": "electron-packager . --icon=assets/images/logo.ico --out=release"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "knex": "^0.13.0",
+    "legacy-encoding": "^3.0.0",
+    "md5": "^2.2.1",
+    "opn": "^5.1.0",
+    "rxjs": "^5.4.3",
+    "sqlite3": "^3.1.13"
+  },
+  "devDependencies": {
+    "asar": "^0.13.0",
+    "electron": "^1.7.8",
+    "electron-packager": "^9.1.0",
+    "electron-rebuild": "^1.6.0"
+  }
+}

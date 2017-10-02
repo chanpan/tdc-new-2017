@@ -1,0 +1,97 @@
+<div class="row">
+        <div class="col-md-7">
+                <h3  id="head-person">ข้อมูลส่วนบุคคล</h3>
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <td id="head-second" width="200" class="text-right"><b> เลขบัตรประจำตัวประชาชน:</b> </td>
+                            <td id="tb1"><span id="person-cid"></span></td>
+                        </tr>
+                        <tr>
+                            <td id="head-second" class="text-right"><b> ชื่อ-นามสกุล:</b> </td>
+                            <td id="tb2"><span id="person-fullname-th"></span></td>
+                        </tr>
+                        <tr>
+                            <td id="head-second" class="text-right"><b> เกิดวันที่:</b> </td>
+                            <td id="tb3"><span id="person-birthday"></td>
+                        </tr>
+                        <tr>
+                            <td id="head-second" class="text-right"><b> ที่อยู่:</b> </td>
+                            <td id="tb4"><span  id="person-address"></td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div><!-- col-md-7 -->
+        <div class="col-md-2">
+                <div id="showImage" style="margin:0 auto; text-align:center;    margin-top:60px;">
+                  <input type="hidden" id="person-md5-imag" class="person-md5-image" readonly>  
+                  <img id='person-pImg'  src="./assets/images/nophoto.png" class="img img-responsive img-thumbnail" >
+                </div>  
+        </div><!-- col-md-2 -->
+        <div class="col-md-3">
+                <h3 id="head-person">ขอรับบริการ</h3>
+                    <div><label class="cursor"><input type="radio" id="getService" name="getService" value="1" > ตรวจสุขภาพ (Check up)</label></div>
+                    <div><label class="cursor"><input type="radio" id="getService" name="getService" value="1" > ตรวจตามนัด (Follow up)</label></div>
+                    <div><label class="cursor"><input type="radio" id="getService" name="getService" value="1" > ส่งต่อการรักษา (Refer)</label></div>
+                    <div><label class="cursor"><input type="radio" id="getService" name="getService" value="1" > ตรวจรักษาโรค</label></div>
+
+                    <div style="    margin-left: 35px;">
+                          อาการสำคัญ ระบุ<br>
+                          <input type="text" class="form-control">
+                    </div>
+        </div><!-- col-md-3 -->
+</div><!-- row -->
+<div class="row">
+    <div class="col-md-7">
+        <h3 id="head-person">ข้อมูลสุขภาพ</h3>
+        <table class="table table-striped">
+            <tbody>
+                <tr>
+                    <td id="head-second" width="200" class="text-right"> <b>โรคประจำตัว</b></td>
+                    <td id="tb1">ไม่มี</td>
+                </tr>
+                <tr>
+                    <td id="head-second" class="text-right"> <b>ยาที่ใช้ประจำ</b></td>
+                    <td id="tb2">ไม่มี</td>
+                </tr>
+                <tr>
+                    <td id="head-second" class="text-right"> <b>แพ้ยา</b></td>
+                    <td id="tb3">ไม่มี</td>
+                </tr>
+                <tr>
+                    <td id="head-second" class="text-right"> <b>กรุ๊ปเลือด</b></td>
+                    <td id="tb4"> -</td>
+                </tr>
+            </tbody>
+        </table>
+    </div><!-- col-md-7 -->
+<div class="col-md-5" style="border-left: 2px solid #ccc;">
+        <h3 id="head-person">สิทธิการรักษา</h3>
+    <table class="table">
+        <tbody>
+            <tr>
+                <td id="head-person" width="200" class="text-right"> <b>สิทธิการรักษา</b></td>
+                <td>หลักประกันสุขภาพแห่งชาติ</td>
+            </tr>
+            <tr>
+                 
+            </tr>
+            <tr>
+                <td id="head-person" class="text-right"> <b>ยืนยันตัวบุคคล</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="head-second" class="text-right"> <b>รหัส OPT</b></td>
+                <td id="pin">*****</td>
+            </tr>
+            <tr>
+                <td id="head-second" class="text-right"> <b>ลายนิ้วมือ</b></td>
+                <td class="text-center">
+                    <img src="./assets/images/pine.jpg" style="width:100px;text-align:center;">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div><!-- col-md-5 -->
+</div>
+<!-- row -->

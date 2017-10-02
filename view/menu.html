@@ -1,0 +1,51 @@
+<div class="panel-container">
+    <div class="panel-left">
+        <nav class="navbar navbar-default sidebar" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#"><span style="font-size:16px;" class="pull-left hidden-xs showopacity glyphicon glyphicon-home"></span>&nbsp; Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-size:16px;" class="pull-left hidden-xs showopacity fa fa-cog"></span>Setting <span class="caret"></span></a>
+                            <ul class="dropdown-menu forAnimate" role="menu">
+                                <li><a href="{{URL::to('createusuario')}}">Crear</a></li>
+                                <li><a href="#">Modificar</a></li>
+                                <li><a href="#">Reportar</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Informes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="btnLogout"><span style="font-size:16px;" class="pull-left hidden-xs showopacity fa fa-power-off"></span> Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="splitter">
+    </div>
+
+    <div class="panel-right">
+        right panel
+    </div>
+</div>
+
+<script>
+    require("./controller/MenuController.js");
+    $(".panel-left").resizable({
+        handleSelector: ".splitter",
+        resizeHeight: false
+    });
+
+</script>
+ 

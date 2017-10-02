@@ -1,0 +1,4 @@
+วิธีเปิดเครื่อง Smart Card
+1.กดปุ่ม Window+R 
+	services.msc
+2.
