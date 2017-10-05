@@ -11,9 +11,19 @@
                       </button>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav menu-ul">
                         <li class="active"><a href="#"><span style="font-size:16px;" class="pull-left hidden-xs showopacity glyphicon glyphicon-home"></span>&nbsp; Home</a></li>
-                        <li class="dropdown">
+                        <li id="tab-settins">
+                            <a href="#" class="btnSettings" data-id="tab-settings" data-url="./view/setting/setting.html">
+                                <span style="font-size:16px;" class="pull-left hidden-xs showopacity glyphicon glyphicon-cog"></span>&nbsp; ตั้งค่า
+                            </a>
+                        </li>
+                        <li class="tab-condition">
+                            <a href="#" class="btnCondition" data-id="tab-condition" data-url="./view/condition.html">
+                              <span style="font-size:16px;" class="pull-left hidden-xs showopacity glyphicon glyphicon-book"></span>&nbsp; เงื่อนไขการใช้งาน
+                            </a>
+                        </li>
+                        <!-- <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-size:16px;" class="pull-left hidden-xs showopacity fa fa-cog"></span>Setting <span class="caret"></span></a>
                             <ul class="dropdown-menu forAnimate" role="menu">
                                 <li><a href="{{URL::to('createusuario')}}">Crear</a></li>
@@ -24,7 +34,7 @@
                                 <li class="divider"></li>
                                 <li><a href="#">Informes</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                         <li><a href="#" class="btnLogout"><span style="font-size:16px;" class="pull-left hidden-xs showopacity fa fa-power-off"></span> Logout</a></li>
                     </ul>
                 </div>
@@ -36,7 +46,19 @@
     </div>
 
     <div class="panel-right">
-        right panel
+        <div id="root-header-page">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="pull-right"></div>
+                    <div>TDC ยินดีต้อนรับ</div>
+                </div>
+                <div class="panel-body">
+                    <div><b><i class="fa fa-user"></i> ชื่อ-นามสกุล : </b><span id="user_login_name"></span></div>
+                    <div id="user_login_sitecode"></div>
+                </div>
+            </div>
+        </div>
+        <div id="root-body-page"></div>
     </div>
 </div>
 

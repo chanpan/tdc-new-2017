@@ -37,11 +37,11 @@ exports.childWindow = function(data){
 
 function CreateMainWindow(){
   mainWin = new BrowserWindow({ 
-    width:600, height:600,
-    minWidth:600,
-    minHeight: 600,
-    maxHeight:600,
-    maxWidth:600,
+    width:800, height:700,
+    minWidth:800,
+    minHeight: 800,
+    maxHeight:800,
+    maxWidth:800,
     frame: true,
     resizable: false
     //fullscreen: true
@@ -52,7 +52,7 @@ function CreateMainWindow(){
     app.exit(); 
  });
 	app.on('closed', function () { mainWin = null; app.exit() });
-  mainWin.toggleDevTools();
+  //mainWin.toggleDevTools();
   //child.exit();
 }
 function CreateChildWindow(data){
@@ -63,8 +63,8 @@ function CreateChildWindow(data){
     //modal: true,
     show: true
   });
-   child.loadURL(`file://${__dirname}/index.html?data=${data}`);
-   child.toggleDevTools();
+   child.loadURL(`file://${__dirname}/index.html?token=${data}`);
+   //child.toggleDevTools();
    child.on('closed', function () { 
       child = null;
       app.exit(); 

@@ -1,6 +1,7 @@
 body{
     background: #f3f3f3;
     /* font-family: 'TH Baijam'; */
+    overflow: hidden;
 } 
 .panel-container {
     display: flex;
@@ -8,8 +9,9 @@ body{
     height: 100%;
     overflow: hidden;
     xtouch-action: none;
-    min-height: 800px;
+    min-height: 530px;
     background: #ffffff;
+    overflow:hidden;
 }
 
 .panel-left {

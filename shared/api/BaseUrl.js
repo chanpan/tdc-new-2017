@@ -4,6 +4,6 @@ exports.ThaiCareCloud=function(){
 exports.BackendThaiCareCloud=function(){
     return "https://backend.thaicarecloud.org";
 }
-exports.TdcUrl=function(){
-    return "https://tdcservice.thaicarecloud.org/user";
+exports.TdcUrl=function(url){
+    return "https://tdcservice.thaicarecloud.org"+url;
 }

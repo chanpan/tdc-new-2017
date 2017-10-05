@@ -17,8 +17,7 @@ function Settings(url, method, headers="", data=""){
     return settings;  
 }
 
-exports.GetService=function(url,headers="",data){
-   
+exports.GetLoginService=function(url,headers="",data){
     return new Observable(ob=>{
         $.ajax(Settings(url, "GET", headers,data)).done(function (response) {
            ob.next(response);
@@ -27,6 +26,17 @@ exports.GetService=function(url,headers="",data){
         });
     });
 }
+ 
+
+exports.GetService=function(url){  
+    //settings.url = "https://tdcservice.thaicarecloud.org/buffe-config?token=HreXtADA4KJMP-7QC9wjF5U6NrZS5z84";
+    var options = Settings(url, "GET", "", "");
+    return new Observable(ob=>{
+        $.ajax(options).done(function (response) {
+            ob.next(response);
+        });
+    });
+}//getSetting
 
 exports.PostService=function(url,headers="",form){
     /*var form = new FormData();

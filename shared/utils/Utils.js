@@ -7,6 +7,9 @@ require('rxjs/add/operator/map');
 exports.HomePath=function(){
     return os.homedir();
 }
+exports.getQueryStringValue=function(key) {  
+    return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));  
+}
 exports.GeneratorAutoId=function(){
     var n = Date.now();
     let val = n * 1000;

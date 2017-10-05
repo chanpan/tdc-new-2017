@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Smart Card Register</title>
+	<title>Thai Database Connector (TDC)</title>
 	<link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="./assets/css/main.css">
@@ -21,9 +21,16 @@
 </head>
 
 <body>
+	<input type="hidden" class="form-control" id="access_token" >
 	<div id="navbar"></div>
 		<script>
-				$("#navbar").load("./view/menu.html");
+			$("#navbar").load("./view/menu.html");	
+			var token = getQueryStringValue("token");
+			$("#access_token").val(token);
+			function getQueryStringValue (key) {  
+				return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));  
+			}
+			require("./controller/IndexController.js");
 		</script>
 
 </body>

@@ -128,13 +128,14 @@ exports.ReadPromise=function(table,datas,limit="unlimit"){
   return  knex.select('*').from(table).where(datas).limit(limit).map(row=>row=row).catch(err=>err=err);
  
 }
-exports.Update=function(tables,datas,where){
+exports.Update=function(tables,datas,whereColumn,operator,value){
   /**
    * table=user
    * data={username:'admin'}
    * where={id:1}
    **/
-  return knex(table).where(where).update(data);
+  return knex(tables).where(whereColumn, operator, value).update(datas);
+  //return knex(table).where(where).update(datas);
 }
 exports.Delete=function(tables,wheres){
   /** 

@@ -24,9 +24,9 @@ exports.CopyFile = function(target, src){
         fs.readFile(target,function(err, data){
             if(err){
                 fs.writeFileSync(target, fs.readFileSync(src));
-                ob.next("Success.");
+                ob.next("Copy file success.");
             }else{
-                ob.next("Success.");
+                ob.next("Copy file success.");
             }
         });
     });
